@@ -65,7 +65,27 @@ The VAE and both generators are trained once per data fraction (fixed
 classifier seeds, so the variance reported in the main tables reflects
 classifier training. Generator-initialization variance is measured separately
 in `fill_placeholders.py`.
+## Citation
+If you use this code or protocol, please cite the preprint:
 
+> Syed Mujtaba Haider and Silvia Figini. "A Controlled Benchmark of
+> Quantum-Latent GAN Augmentation for Brain MRI." arXiv:2606.18970 (2026).
+> https://doi.org/10.48550/arXiv.2606.18970
+
+BibTeX:
+
+```bibtex
+@article{haider2026controlled,
+  title         = {A Controlled Benchmark of Quantum-Latent GAN Augmentation for Brain MRI},
+  author        = {Haider, Syed Mujtaba and Figini, Silvia},
+  journal       = {arXiv preprint arXiv:2606.18970},
+  year          = {2026},
+  doi           = {10.48550/arXiv.2606.18970},
+  archivePrefix = {arXiv},
+  eprint        = {2606.18970},
+  primaryClass  = {cs.LG}
+}
+```
 ## Note
 Quantum circuits run on an ideal state-vector simulator (PennyLane
 `default.qubit`); results are not subject to hardware noise.
